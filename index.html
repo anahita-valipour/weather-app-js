@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#14284a" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="theme-cloudy">
+    <div class="sky" aria-hidden="true">
+      <div class="sky__layer sky__layer--high"></div>
+      <div class="sky__layer sky__layer--low"></div>
+    </div>
+
+    <main class="app">
+      <h1 class="app__title">Weather App</h1>
+
+      <form class="search" id="search-form" role="search">
+        <label class="visually-hidden" for="city-input"></label>
+        <input class="search__input" id="city-input" type="text" placeholder="Search for a city" autocomplete="off" spellcheck="false"/>
+        <button class="search__btn" type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m15.5 15.5 5.5 5.5" />
+          </svg>
+        </button>
+      </form>
+      <p class="search__status" id="search-status" role="status"></p>
+
+      <div class="weather-card" aria-live="polite">
+        <section class="current" aria-label="Current weather">
+          <div class="current__main">
+            <p class="current__city"><span id="city">Search for a city</span></p>
+            <p class="current__temp unit-deg" id="temp" data-empty></p>
+          </div>
+          <div class="current__condition">
+            <p class="current__label" id="condition">Awaiting search</p>
+            <p class="current__description" id="condition-text"></p>
+          </div>
+        </section>
+
+        <section class="details" aria-label="Weather details">
+          <div class="details__item">
+            <p class="details__label">Feels like</p>
+            <p class="details__value unit-deg" id="feels-like" data-empty></p>
+          </div>
+          <div class="details__item">
+            <p class="details__label">Humidity</p>
+            <p class="details__value unit-pct" id="humidity" data-empty></p>
+          </div>
+          <div class="details__item">
+            <p class="details__label">Wind</p>
+            <p class="details__value" id="wind"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
