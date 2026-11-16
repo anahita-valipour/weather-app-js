@@ -33,15 +33,15 @@ Add the four PNG files below to the `screenshots/` folder using these filenames.
 
 ### Desktop
 
-| Sunny | Cloudy | Rainy |
-| --- | --- | --- |
-| ![Sunny weather on desktop](./screenshots/desktop-sunny.png) | ![Cloudy weather on desktop](./screenshots/desktop-cloudy.png) | ![Rainy weather on desktop](./screenshots/desktop-rainy.png) |
+| Sunny                                                | Cloudy                                                 | Rainy                                                |
+| ---------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
+| ![Sunny weather on desktop](./screenshots/sunny.png) | ![Cloudy weather on desktop](./screenshots/cloudy.png) | ![Rainy weather on desktop](./screenshots/rainy.png) |
 
 ### Mobile
 
-| Rainy |
-| --- |
-| ![Rainy weather on mobile](./screenshots/mobile-rainy.png) |
+| cloudy                                                       |
+| ------------------------------------------------------------ |
+| ![cloudy weather on mobile](./screenshots/mobile-cloudy.png) |
 
 ## 📁 Project Structure
 
@@ -75,6 +75,7 @@ weather-app-js/
    ```
 
    If you use the command, open `http://localhost:8000` in your browser.
+
 4. Enter a city name and submit the form to see its current weather.
 
 ## 🎯 Learning Goals
